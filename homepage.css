@@ -1,0 +1,13 @@
+section:first-child {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5em;
+  gap: 10em;
+}
+
+section:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

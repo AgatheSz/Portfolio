@@ -1,12 +1,14 @@
 body {
-  margin: 0 0 2em 0;
+  margin: 0;
   font-family: 'Century Gothic', sans-serif;
+  background-color: #F8FFF4;
 }
 
 header {
   font-size: 1.25em;
   background-color: #4FB286;
   position: fixed;
+  top: 0;
   opacity: 0.5;
   display: flex;
   flex-direction: row;
@@ -16,33 +18,25 @@ header {
   width: 50%;
 }
 
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  background-color: #4FB286;
+  color: #fff;
+  padding: 1.5em 2em;
+  margin-top: 4em;
+}
+
 nav {
   display: flex;
   gap: 3em;
 }
 
-main>div {
-  font-size: 2em;
-  text-transform: uppercase;
-  padding: 2em;
-}
-
-section:first-child {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 5em;
-  gap: 10em;
-}
-
 #bio {
   width: 50%;
-}
-
-section:last-child {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 .project {
@@ -57,16 +51,27 @@ section:last-child {
   padding: 1em;
 }
 
-.project-title {
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  padding: 2em;
+}
+
+h3 {
   text-transform: uppercase;
   font-size: 1.5em;
 }
 
-header p {
+header p,
+header a {
   color: #fff;
 }
 
-header a {
+a {
   text-decoration: none;
-  color: #fff;
 }
