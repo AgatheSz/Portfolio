@@ -68,6 +68,17 @@ h3 {
   font-size: 1.5em;
 }
 
+img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition-duration: 0.1s;
+}
+
 header p,
 header a {
   color: #fff;
