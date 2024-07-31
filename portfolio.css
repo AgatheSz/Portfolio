@@ -16,6 +16,7 @@ header {
   align-items: center;
   padding: 1.5em 3em;
   width: 50%;
+  z-index: 1;
 }
 
 footer {
@@ -84,11 +85,16 @@ header a {
   color: #fff;
 }
 
+svg {
+  margin-left: 0.5em;
+}
+
 a {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+svg:hover {
   transform: scale(1.5);
   transition-duration: 0.3s;
 }
