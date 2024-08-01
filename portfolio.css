@@ -35,22 +35,6 @@ nav {
   gap: 3em;
 }
 
-.bio {
-  width: 50%;
-}
-
-.project {
-  border: 1px solid #000;
-  width: 400px;
-}
-
-.project-title-description {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1em;
-}
-
 h1 {
   font-size: 2.5em;
   text-transform: uppercase;
@@ -79,6 +63,10 @@ img:hover {
   transition-duration: 0.1s;
 }
 
+h2+p {
+  margin-top: 0;
+}
+
 header p,
 header a {
   color: #fff;
@@ -96,4 +84,123 @@ a:hover,
 svg:hover {
   transform: scale(1.3);
   transition-duration: 0.5s;
+}
+
+/* homepage.html */
+
+.bio {
+  width: 50%;
+}
+
+.project {
+  border: 1px solid #000;
+  width: 400px;
+}
+
+.project-title-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+#bio-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5em;
+  gap: 10em;
+}
+
+#project-container,
+section:has(>.skills) {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* about.html */
+
+.skills {
+  border: 2px solid #000;
+  width: 30%;
+  text-align: center;
+}
+
+section a {
+  color: #000;
+  font-size: 1.5em;
+}
+
+/* projects.css */
+
+#future-projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+#future-projects {
+  width: 50%;
+  border: 1px solid #4FB286;
+  display: grid;
+  justify-items: center;
+}
+
+#future-projects-list {
+  padding: 0.5em;
+  font-size: 1.1em;
+}
+
+.lone-title {
+  display: grid;
+  justify-items: right;
+  margin: 1.5em;
+}
+
+/* contact.html */
+
+#contact-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#github-issues {
+  width: 50%;
+  align-self: center;
+}
+
+#github-issues>div {
+  margin-bottom: 4em;
+}
+
+#contact-title {
+  margin-right: 4em;
+}
+
+label {
+  margin: 1em 0 0.5em 0;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  display: grid;
+  align-items: center;
+  background-color: #4FB286;
+  opacity: 0.8;
+  border: none;
+  color: #fff;
+  padding: 1em;
+  margin-top: 2em;
+  font-size: 1em;
+}
+
+#button {
+  text-align: center;
 }
