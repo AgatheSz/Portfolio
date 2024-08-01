@@ -1,0 +1,13 @@
+a {
+  color: #000;
+}
+
+section:last-child div {
+  border: 2px solid #000;
+  width: 30%;
+  text-align: center;
+}
+
+h2+p {
+  margin-top: 0;
+}

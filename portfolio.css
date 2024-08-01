@@ -6,10 +6,9 @@ body {
 
 header {
   font-size: 1.25em;
-  background-color: #4FB286;
+  background-color: #A4D8BD;
   position: fixed;
   top: 0;
-  opacity: 0.5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -95,6 +94,6 @@ a {
 
 a:hover,
 svg:hover {
-  transform: scale(1.5);
-  transition-duration: 0.3s;
+  transform: scale(1.3);
+  transition-duration: 0.5s;
 }
