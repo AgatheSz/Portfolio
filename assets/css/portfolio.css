@@ -2,6 +2,10 @@ body {
   margin: 0;
   font-family: 'Century Gothic', sans-serif;
   background-color: #F8FFF4;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 1.5em;
+  }
 }
 
 header {
@@ -17,9 +21,11 @@ header {
   width: 50%;
   z-index: 1;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 1.5em 0.5em;
     font-size: 1.1em;
+    justify-content: space-around;
+
   }
 }
 
@@ -39,7 +45,7 @@ nav {
   display: flex;
   gap: 3em;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     gap: 1em;
   }
 }
@@ -100,7 +106,7 @@ svg:hover {
 .bio {
   width: 50%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     width: 90%;
   }
 }
@@ -124,7 +130,7 @@ svg:hover {
   padding: 5em;
   gap: 10em;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
   }
 }
@@ -135,7 +141,7 @@ section:has(>.skills) {
   flex-direction: row;
   justify-content: space-around;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     flex-direction: column;
     align-items: center;
     gap: 2em;
@@ -184,6 +190,10 @@ section a {
   display: grid;
   justify-items: right;
   margin: 1.5em;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 2em;
+  }
 }
 
 /* contact.html */
@@ -232,14 +242,14 @@ button {
   text-align: center;
 }
 
-/* header */
+/* burger menu */
 
 #hidden {
   display: none;
 }
 
 #hidden+label {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: inline-block;
     content: "";
     width: 50px;
@@ -250,34 +260,27 @@ button {
 }
 
 #hidden:checked+label {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: inline-block;
     content: "";
     width: 50px;
     height: 50px;
     background-size: 50px 50px;
-    background-image: url(burger.png);
+    background-image: url(/assets/img/burger.png);
   }
 }
 
 #hidden~a {
-  display: flex;
-  padding: 0;
-  list-style: none;
-  justify-content: space-around;
-  margin-top: 5%;
-
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
+nav:has(>#hidden:checked),
 #hidden:checked~a {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    gap: 15px;
-    padding: 0;
+    text-align: center;
   }
 }
