@@ -209,12 +209,13 @@ button {
   background-color: #4FB286;
 }
 
-/* burger menu */
+/* Menu burger */
 
 #hidden {
   display: none;
 }
 
+/* Responsive pour les écrans de 767px de largeur ou moins */
 @media (max-width: 767px) {
   body {
     padding-top: 1.5em;
@@ -249,7 +250,7 @@ button {
     padding-top: 2em;
   }
 
-  /* burger menu */
+  /* Menu burger */
 
   #hidden+label {
     display: inline-block;

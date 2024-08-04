@@ -1,3 +1,5 @@
+<!-- Page rassemblant mes projets + idées pour ceux à venir -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,21 +11,24 @@
 </head>
 
 <body>
+  <!-- header contenant les liens vers les autres pages -->
   <header>
-    <a href="/index.html">Agathe Szkola</a>
+    <a href="./index.html">Agathe Szkola</a>
 
     <nav>
+      <!-- checkbox + label permet d'afficher un menu burger en mode mobile (ne s'affiche pas sur les écrans au-dessus de 767px de largeur) -->
       <input type="checkbox" name="hidden" id="hidden">
       <label for="hidden"></label>
-      <a href="about.html">A Propos</a>
-      <a href="projects.html">Projets</a>
-      <a href="contact.html">Contact</a>
+      <a href="pages/about.html">A Propos</a>
+      <a href="pages/projects.html">Projets</a>
+      <a href="pages/contact.html">Contact</a>
     </nav>
   </header>
 
   <h1 class="lone-title">L'ensemble de mes projets</h1>
 
   <main>
+    <!-- TODO : Faire un tri dans les idées de projets et en ajouter quelques unes -->
     <section id="future-projects-container">
       <div id="future-projects">
         <h2>A venir</h2>
@@ -33,6 +38,8 @@
       </div>
     </section>
 
+    <!-- Plusieurs séries (3 par ligne) de "cards" présentant tous mes projets -->
+    <!-- TODO : Faire une sélection des projets ADA dont j'ai le plus envie de parler et les ajouter.  -->
     <section id="project-container">
       <div class="project">
         <img src="/assets/img/projet-image.jpg" alt="placeholder 400x200 px">
@@ -78,12 +85,14 @@
     </section>
   </main>
 
+  <!-- footer avec liens vers mes comptes linkedIn et Github -->
   <footer>
     <div>©2024 Agathe Szkola</div>
     <div>Site réalisé avec HTML et CSS</div>
 
     <div id="social-media">
       <a href="https://www.linkedin.com/in/agathe-szkola/">
+        <!-- SVG linkedin -->
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50" fill="#fff"
           aria-label="linkedin icon">
           <path
@@ -93,6 +102,7 @@
       </a>
 
       <a href="https://github.com/AgatheSz">
+        <!-- SVG github -->
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24" fill="#fff"
           aria-label="github icon">
           <path
@@ -101,7 +111,6 @@
         </svg>
       </a>
     </div>
-
   </footer>
 </body>
 
